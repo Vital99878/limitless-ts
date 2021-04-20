@@ -1,0 +1,41 @@
+.MenuItemDropdown {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 12px;
+  background-color: #324148;
+  display: flex;
+  color: whitesmoke;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  font-weight: 400;
+  font-size: 12px;
+  border: none;
+
+  & :nth-child(1) {
+    margin-right: 12px;
+  }
+  & :nth-child(2) {
+    margin-left: auto;
+  }
+  & :nth-child(3) {
+    display: none;
+  }
+
+  &:hover {
+    background-color: rgba(133, 133, 133, 0.7);
+  }
+}
+
+.active {
+  background-color: rgba(133, 133, 133, 0.7);
+
+  & :nth-child(2) {
+    display: none;
+  }
+
+  & :nth-child(3) {
+    margin-left: auto;
+    display: block;
+  }
+}

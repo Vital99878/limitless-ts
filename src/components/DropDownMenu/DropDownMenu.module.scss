@@ -1,0 +1,33 @@
+.DropdownBlock {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #324148;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  font-size: 0.8125rem;
+}
+
+.DropdownTitle {
+  color: rgba(230, 230, 230, 0.5);
+  padding: 6px 20px;
+}
+.buttonContent {
+  padding: 0;
+  margin: 0;
+}
+.dropdownMenu {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.DropdownItem {
+  padding: 8px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.DropdownItem:hover {
+  transition: background-color .6s ease-out;
+  background-color: #4d4d4d;
+}

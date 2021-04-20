@@ -1,0 +1,37 @@
+.MenuItem {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 12px;
+  background-color: #324148;
+  display: flex;
+  color: whitesmoke;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  font-weight: 400;
+  font-size: 12px;
+  border: none;
+
+  &:hover {
+    background-color: rgba(133, 133, 133, 0.7);
+  }
+
+  & :nth-child(1) {
+    margin-right: 12px;
+  }
+}
+
+.isActive {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  display: flex;
+  color: whitesmoke;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #26a69a;
+  transition: background-color 0.6s ease-out;
+}

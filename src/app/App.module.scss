@@ -37,3 +37,38 @@
     transform: translateY(0px);
   }
 }
+
+body > * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Reset style
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.app {
+  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    'logo header'
+    'sidebar main'
+    'sidebar footer';
+  background-color: #ebeef3;
+}
+
+.app > * {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}

@@ -1,0 +1,16 @@
+.logo {
+  height: 48px;
+  grid-area: logo;
+  background-color: #324148;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.logoName {
+  margin-left: 16px;
+}
+img {
+  height: 16px;
+}

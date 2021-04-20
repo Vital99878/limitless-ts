@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:import/typescript",
+    "google"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": false
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier", "react-hooks"],
+  "rules": {
+    "require-jsdoc": "off",
+    "object-curly-spacing": "off",
+    "max-len": "off",
+    "semi": "off",
+    "linebreak-style": "off",
+    "no-unused-vars": "off",
+    "indent": "off",
+    "react/prop-types": "off"
+  },
+  "ignorePatterns": ["temp.js", "**/vendor/*.js", "./src/other/**"]
+}

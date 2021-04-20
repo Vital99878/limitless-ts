@@ -1,0 +1,12 @@
+.sidebar {
+  grid-area: sidebar;
+  background-color: #324148;
+  width: 200px;
+}
+
+.menuTitle {
+  text-transform: uppercase;
+  padding: 8px 12px 4px;
+  color: rgba(179, 179, 179, 0.952);
+  font-size: 12px;
+}

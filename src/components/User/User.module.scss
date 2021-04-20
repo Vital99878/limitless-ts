@@ -1,0 +1,29 @@
+.user {
+  padding: 8px 12px;
+  display: flex;
+  height: 32px;
+  align-items: center;
+  cursor: pointer;
+  color: whitesmoke;
+  min-width: 120px;
+
+  &:hover {
+    background-color: rgba(133, 133, 133, 0.7);
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .userName {
+    margin-left: 12px;
+    font-size: 12px;
+  }
+
+  .chevronDown {
+    margin-left: auto;
+    // width: 8px;
+  }
+}

@@ -1,9 +1,11 @@
+@import '../variables.scss';
+
 .header {
   padding: 0 20px;
   grid-area: header;
   height: 48px;
   width: 100%;
-  background-color: #324148;
+  background-color: $color-button;
   display: flex;
   align-items: center;
   color: whitesmoke;
@@ -19,17 +21,17 @@
   background-color: rgb(76, 175, 80);
   margin-left: 12px;
 }
-s .headerButton {
+.headerButton {
   position: relative;
   cursor: pointer;
   width: 48px;
   height: 48px;
-  background-color: #324148;
+  background-color: $color-button;
   color: aliceblue;
   border: none;
 
   &:hover {
-    background-color: rgba(133, 133, 133, 0.7);
+    background-color: $color-button--hover;
     transition: background-color ease-in 0.4s;
   }
 }

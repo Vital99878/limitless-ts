@@ -3,13 +3,7 @@ import classes from './Sidebar.module.scss'
 import MenuItem from './MenuItem'
 import MenuItemDropdown from './MenuItemDropdown'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faCoffee,
-  faAd,
-  faHome,
-  faChevronDown,
-  faChevronRight,
-} from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faAd, faHome, faClipboard } from '@fortawesome/free-solid-svg-icons'
 import User from '../User'
 
 const Sidebar: FC = (): JSX.Element => {
@@ -19,27 +13,22 @@ const Sidebar: FC = (): JSX.Element => {
       title: 'Main',
       items: [
         <MenuItem
-          data={{
-            path: 'path',
-            title: 'Fist item',
-            icon: <FontAwesomeIcon icon={faHome} size="1x" />,
-          }}
-          key={3}
-        />,
-        <MenuItem
-          data={{
-            path: 'path',
-            title: 'Main',
-            icon: <FontAwesomeIcon icon={faAd} size="1x" />,
-          }}
+          path="path"
+          title="Fist item"
+          active={true}
+          icon={<FontAwesomeIcon icon={faHome} size="1x" />}
           key={3}
         />,
         <MenuItemDropdown
-          data={{
-            path: 'path',
-            title: 'Layouts',
-            icon: <FontAwesomeIcon icon={faCoffee} size="1x" />,
-          }}
+          title="Menu dropdown"
+          icon={<FontAwesomeIcon icon={faAd} size="1x" />}
+          innerList={['first el', 'second el']}
+          key={2}
+        />,
+        <MenuItemDropdown
+          title="Layouts"
+          icon={<FontAwesomeIcon icon={faCoffee} size="1x" />}
+          innerList={['first el', 'second el']}
           key={3}
         />,
       ],
@@ -48,27 +37,10 @@ const Sidebar: FC = (): JSX.Element => {
       title: 'Second menu',
       items: [
         <MenuItem
-          data={{
-            path: 'path',
-            title: 'Fist item',
-            icon: <FontAwesomeIcon icon={faHome} size="1x" />,
-          }}
-          key={3}
-        />,
-        <MenuItem
-          data={{
-            path: 'path',
-            title: 'Main',
-            icon: <FontAwesomeIcon icon={faAd} size="1x" />,
-          }}
-          key={3}
-        />,
-        <MenuItemDropdown
-          data={{
-            path: 'path',
-            title: 'Layouts',
-            icon: <FontAwesomeIcon icon={faCoffee} size="1x" />,
-          }}
+          path="path"
+          title="Second item"
+          active={false}
+          icon={<FontAwesomeIcon icon={faClipboard} size="1x" />}
           key={3}
         />,
       ],

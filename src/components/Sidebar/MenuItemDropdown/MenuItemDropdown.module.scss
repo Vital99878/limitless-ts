@@ -1,8 +1,10 @@
+@import '../../variables.scss';
+
 .MenuItemDropdown {
   box-sizing: border-box;
   width: 100%;
   padding: 12px 12px;
-  background-color: #324148;
+  background-color: $color-button;
   display: flex;
   color: whitesmoke;
   align-items: center;
@@ -11,11 +13,13 @@
   font-weight: 400;
   font-size: 12px;
   border: none;
+  transition: transform 0.6s;
 
   & :nth-child(1) {
     margin-right: 12px;
   }
   & :nth-child(2) {
+    transition: transform 0.6s;
     margin-left: auto;
   }
   & :nth-child(3) {
@@ -23,19 +27,14 @@
   }
 
   &:hover {
-    background-color: rgba(133, 133, 133, 0.7);
-  }
-}
-
-.active {
-  background-color: rgba(133, 133, 133, 0.7);
-
-  & :nth-child(2) {
-    display: none;
+    background-color: $color-button--hover;
   }
 
-  & :nth-child(3) {
-    margin-left: auto;
-    display: block;
+  &__active {
+    background-color: $color-button--hover;
+    & :nth-child(2) {
+      transition: transform 0.6s;
+      transform: rotate(90deg);
+    }
   }
 }

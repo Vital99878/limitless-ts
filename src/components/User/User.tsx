@@ -9,11 +9,7 @@ const User: FC = (): JSX.Element => {
     <div className={classes.user}>
       <img src={defaultAva} alt="Avatar" />
       <div className={classes.userName}>User name</div>
-      <FontAwesomeIcon
-        className={classes.chevronDown}
-        icon={faChevronDown}
-        size="sm"
-      />
+      <FontAwesomeIcon className={classes.chevronDown} icon={faChevronDown} size="sm" />
     </div>
   )
 }

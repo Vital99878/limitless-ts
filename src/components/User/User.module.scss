@@ -1,3 +1,4 @@
+@import '../../components/variables.scss';
 .user {
   padding: 8px 12px;
   display: flex;
@@ -8,7 +9,7 @@
   min-width: 120px;
 
   &:hover {
-    background-color: rgba(133, 133, 133, 0.7);
+    background-color: $color-button--hover;
   }
 
   img {

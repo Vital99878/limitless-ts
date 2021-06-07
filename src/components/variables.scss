@@ -1,0 +1,69 @@
+//  COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+$color-button: #324148;
+$color-button--active: #6e6e6eb0;
+$color-button--hover: rgba(70, 70, 70, 0.829);
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 4rem;
+$gutter-vertical-small: 2rem;
+$gutter-horizontal: 4rem;
+
+//FONT
+$default-font-size: 1.6rem;
+
+:root {
+  --blue: #2196f3;
+  --blue-100: #e9f5fe;
+  --red: #ef5350;
+  --red-100: #fdeeee;
+  --orange: #f58646;
+  --orange-100: #fef3ed;
+  --green: #25b372;
+  --green-100: #e9f7f1;
+  --cyan: #2cbacc;
+  --cyan-100: #eaf8fa;
+  --gray: #999;
+  --gray-dark: #333;
+  --primary: #2196f3;
+  --primary-100: #e9f5fe;
+  --secondary: #45748a;
+  --secondary-100: #ecf1f3;
+  --success: #25b372;
+  --success-100: #e9f7f1;
+  --info: #2cbacc;
+  --info-100: #eaf8fa;
+  --warning: #f58646;
+  --warning-100: #fef3ed;
+  --danger: #ef5350;
+  --danger-100: #fdeeee;
+  --white: #fff;
+  --light: #f0f2f5;
+  --light-100: rgba(255, 255, 255, 0.1);
+  --dark: #252b36;
+  --dark-100: rgba(0, 0, 0, 0.1);
+  --teal: #26a69a;
+  --teal-100: #e9f6f5;
+  --indigo: #5c6bc0;
+  --indigo-100: #eff0f9;
+  --purple: #8e70c1;
+  --purple-100: #f4f1f9;
+  --pink: #f35c86;
+  --pink-100: #feeff3;
+  --yellow: #ffd648;
+  --yellow-100: #fffbed;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 769px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}

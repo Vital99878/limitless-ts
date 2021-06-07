@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import Header from '../components/Header/Header'
-import Logo from '../components/Logo/Logo'
+import Logo from '../components/Logo'
 import Sidebar from '../components/Sidebar'
 import classes from './App.module.scss'
 

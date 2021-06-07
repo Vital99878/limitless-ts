@@ -1,0 +1,4 @@
+// Valid
+/root/src/other/*.ts
+
+// file don't working

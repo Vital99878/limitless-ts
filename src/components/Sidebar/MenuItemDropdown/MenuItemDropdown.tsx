@@ -1,25 +1,22 @@
 import React, { FC, useState } from 'react'
 import classes from './MenuItemDropdown.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faChevronRight,
-  faChevronDown,
-} from '@fortawesome/free-solid-svg-icons'
-import { type } from 'os'
-import { ClassExpression } from 'typescript'
+import { faChevronRight, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { MenuItemDropdownProps } from '../../../types/bookProps'
 
-const MenuItemDropdown = ({ data }: any) => {
-  const { icon, path, title } = data
-  const [active, setActive] = useState('not')
+const MenuItemDropdown = ({ icon, title, innerList }: MenuItemDropdownProps) => {
+  const [active, setActive] = useState('')
+  const arrow = 'arrow'
 
   return (
     <button
       className={`${classes.MenuItemDropdown} ${active}`}
       type="button"
       onClick={() =>
-        setActive(() => {
-          return classes.active
-          // if (activeClass) return 'not'
+        setActive((active) => {
+          if (!active) return classes.MenuItemDropdown__active
+          if (active) return ''
+          return 'this state never return!'
         })
       }
     >

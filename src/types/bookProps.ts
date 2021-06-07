@@ -1,18 +1,14 @@
-export interface BookProps {
+import React from "react";
+
+export interface MenuItemProps {
+  path: string;
   title: string;
-  page: number;
-  children: [];
+  active: boolean,
+  icon: React.ReactElement
 }
 
-export interface testProps {
+export interface MenuItemDropdownProps {
   title: string;
-  page: number;
+  innerList: string[],
+  icon: React.ReactElement
 }
-
-export type DiagramData = [number, number, number, number, number, number]
-
-export type DiagramProps = {
-  diagram: DiagramData;
-};
-
-export type ListOfDiagramsProps = { diagrams: DiagramData[] };

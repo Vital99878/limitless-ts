@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import classes from './Header.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleDown, faComment, faUserFriends } from '@fortawesome/free-solid-svg-icons'
+import ButtonStyled from '../../shared/Button'
 import User from '../User'
 
 const Header: FC = (): JSX.Element => {

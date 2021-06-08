@@ -1,8 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import viewSlice from '../features/viewSlice';
 
 export const store = configureStore({
   reducer: {
-    // counter: counterReducer,
+    counter: viewSlice,
     // book: bookReducer,
   },
 });

@@ -38,3 +38,31 @@
     }
   }
 }
+.subItem {
+  display: none;
+
+  &__opened {
+    cursor: pointer;
+    color: whitesmoke;
+    display: block;
+
+    a {
+      display: block;
+      padding: 10px 46px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+      &:hover {
+        background-color: $color-button--active;
+      }
+    }
+  }
+
+  .divider {
+    // margin: 0.1rem 0;
+    background-color: rgba(102, 102, 102, 0.8);
+    height: 0.1px;
+    padding: 0.1px;
+  }
+}
+// todo transition for dropdown and submenu in the submenu
